@@ -17,3 +17,11 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('./assets/css'));
 
 });
+
+gulp.task('watch', function () {
+    return gulp.watch('assets/scss/**/*.scss', gulp.series('sass'));
+});
+
+gulp.task('default', gulp.series('sass',
+    gulp.parallel('watch')
+));
