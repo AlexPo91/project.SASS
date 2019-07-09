@@ -10,9 +10,9 @@ gulp.task('sass', function () {
     return gulp.src('./assets/scss/module.scss')
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        .pipe(concat('module.css'))
         .pipe(autoprefixer ())
         .pipe(uglifycss())
+        .pipe(concat('style.css'))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('./assets/css'));
 
