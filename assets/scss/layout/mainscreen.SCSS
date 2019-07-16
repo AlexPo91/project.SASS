@@ -1,0 +1,206 @@
+.mainscreen_wooden {
+  background-image: url("../image/mainscreen.png");
+
+  .navigation {
+    text-align: left;
+    text-transform: uppercase;
+    font: 15px 'proximanova-bold';
+    color: #6e6e6c;
+    ul {
+      padding: 23px 0 0 0;
+      .menu {
+        display: inline-block;
+        vertical-align: middle;
+
+        .line {
+          display: inline-block;
+          vertical-align: -20%;
+          padding: 0 15px 0 25px;
+          span {
+            display: block;
+            border-bottom: 1px solid;
+            color: #bea67c;
+            padding: 3px 0;
+            width: 30px;
+          }
+
+        }
+
+      }
+      .wooder {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 35px;
+        letter-spacing: 12px;
+        margin: 0 82px 0 348px;
+        position: relative;
+      }
+      .wooder:after {
+        content: "";
+        display: block;
+        border-bottom: 4px solid;
+        width: 63px;
+        color: #bea67c;
+        position: absolute;
+        left: 45px;
+        bottom: 16px;
+      }
+      .about {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 0 0 94px;
+      }
+      .products {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 0 0 117px;
+      }
+      .home {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .information {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 0 0 150px;
+
+      }
+      .language {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 0 0 25px;
+      }
+      .language:after {
+        content: "▼";
+        font-size: 6px;
+        vertical-align: middle;
+        padding: 0 0 0 5px;
+        color: #a9946e;
+      }
+    }
+  }
+  .mainscreen {
+    font: 15px 'proximanova-bold';
+    text-transform: uppercase;
+    font-size: 50px;
+    width: 100%;
+    color: #bea67c;
+    padding: 0 0 244px;
+    margin: 0 auto;
+    .number {
+      display: inline-block;
+      width: 19%;
+      margin: 233px 0 0 0;
+      padding: 0 65px 0 0;
+      vertical-align: top;
+      .common {
+
+        h2 {
+          display: inline-block;
+          transform: rotate(90deg);
+          font-size: 50px;
+          letter-spacing: 8px;
+          margin: 24px 0 79px -198px;
+          color: #c0af91;
+        }
+        .line {
+          display: block;
+          width: 4px;
+          height: 50px;
+          background: #bea67c;
+          margin: 0 0 0 -19px;
+        }
+        .dot {
+          display: block;
+          width: 10px;
+          height: 10px;
+          background: #bea67c;
+          opacity: 0.2;
+          border-radius: 50%;
+          margin: 0 0 40px  -22px;
+        }
+        .dot_point {
+          display: block;
+          width: 10px;
+          height: 10px;
+          background: #bea67c;
+          border-radius: 50%;
+          margin: 0 0 40px -22px;
+        }
+      }
+    }
+    .logowooder {
+      display: inline-block;
+      width: 59%;
+      margin: 268px 42px 0 46px;
+      vertical-align: top;
+      h1 {
+        letter-spacing: 20px;
+        padding: 0 98px 0 0;
+
+      }
+      .more {
+        outline: none;
+        background: none;
+        border-color: #ffffff;
+        color: #ffffff;
+        box-shadow: none;
+        font: 15px 'proximanova-bold';
+        padding: 19px 70px 19px 70px;
+        margin: 40px 337px 0 0;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        cursor: pointer;
+        img {
+          margin: 0 0 0 5px;
+        }
+        .more:hover .scroll_arrow{
+          margin: 52px 625px 0 0;
+        }
+      }
+      .mouse {
+        margin: 53px 625px 0 0;
+      }
+      .scroll_arrow{
+        margin: 12px 625px 0 0;
+      }
+      .scroll p {
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        transform: rotate(90deg);
+        color: #ffffff;
+        opacity: 0.2;
+        margin: 36px 625px 0 0;
+      }
+
+    }
+    .furnituredecor {
+      display: inline-block;
+      width: 19%;
+      transform: rotate(90deg);
+      margin: 381px -160px 0 0;
+      position: relative;
+      span {
+
+        font-size: 15px;
+        letter-spacing: 2px;
+        margin: 30px 19px 0 0;
+      }
+    }
+    .furnituredecor:after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 4px;
+      background: #bea67c;
+      position: absolute;
+      left: 657px;
+      top: 29px;
+    }
+
+  }
+
+}
+
+
