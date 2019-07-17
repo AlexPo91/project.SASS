@@ -1,0 +1,76 @@
+.furniture_main {
+  display: flex;
+  padding: 0 101px;
+  position: relative;
+
+
+  .furniture_item {
+    text-align: left;
+    align-self: center;
+
+
+    h2.title:before {
+      content: "";
+      height: 1px;
+      width: 151px;
+      background-color: #000000;
+
+      display: flex;
+      justify-content: flex-start;
+      position: absolute;
+      top: 50%;
+      right: 100%;
+      margin-right: 30px;
+    }
+    h2 {
+      font: 48px proximanova-bold;
+      text-transform: uppercase;
+      position: relative;
+    }
+    p {
+      font: 15px proximanova-regular;
+      color: #464646;
+      text-align: left;
+      position: relative;
+      word-wrap: break-word;
+
+    }
+    p:before {
+      content: "";
+      height: 3px;
+      width: 44px;
+      background-color: #bea67c;
+      display: flex;
+      position: absolute;
+      top: 0.5em;
+      right: 100%;
+      margin-right: 30px;
+    }
+    h2.subtitle {
+      position: absolute;
+      top: 100%;
+      transform: translate(0, -100%);
+    }
+    .link_1 {
+      font: 14px proximanova-bold;
+      color: #000000;
+      text-transform: uppercase;
+      a {
+        background:transparent;
+        outline:none;
+        color:#000000;
+        text-decoration: none;
+      }
+
+      a:after{
+        content: "";
+        height: 2px;
+        width: 44px;
+        background-color: #bea67c;
+        display: flex;
+
+      }
+    }
+  }
+
+}
