@@ -154,19 +154,15 @@
         img {
           margin: 0 0 0 5px;
         }
-
+        .more:hover .scroll_arrow{
+          margin: 52px 625px 0 0;
+        }
       }
-
       .mouse {
         margin: 53px 625px 0 0;
       }
       .scroll_arrow{
         margin: 12px 625px 0 0;
-
-      }
-      button.more:hover~.scroll_arrow{
-        margin: 52px 625px 0 0;
-
       }
       .scroll p {
         font-size: 15px;
@@ -178,6 +174,7 @@
         margin: 36px 625px 0 0;
       }
 
+    }
     .furnituredecor {
       display: inline-block;
       width: 19%;
@@ -207,4 +204,3 @@
 }
 
 
-}
