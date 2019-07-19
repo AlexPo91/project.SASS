@@ -1,5 +1,7 @@
 .mainscreen_wooden {
   background-image: url("../image/mainscreen.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 
   .navigation {
     text-align: left;
@@ -12,7 +14,7 @@
       .menu {
         display: inline-block;
         vertical-align: middle;
-
+        cursor: pointer;
         .line {
           display: inline-block;
           vertical-align: -20%;
@@ -50,41 +52,116 @@
         display: inline-block;
         vertical-align: middle;
         margin: 0 0 0 94px;
+        cursor: pointer;
       }
       .products {
         display: inline-block;
         vertical-align: middle;
         margin: 0 0 0 117px;
+        cursor: pointer;
       }
       .home {
         display: inline-block;
         vertical-align: middle;
+        cursor: pointer;
       }
       .information {
         display: inline-block;
         vertical-align: middle;
         margin: 0 0 0 150px;
+        cursor: pointer;
 
       }
       .language {
         display: inline-block;
         vertical-align: middle;
         margin: 0 0 0 25px;
+        cursor: pointer;
       }
-      .language:after {
-        content: "▼";
-        font-size: 6px;
-        vertical-align: middle;
-        padding: 0 0 0 5px;
-        color: #a9946e;
-      }
+
     }
     .navigation_line {
       display: block;
       width: 50px;
       height: 4px;
       background: #bea67c;
-      transform: translate(774px,10px);
+      transform: translate(774px, 5px);
+    }
+    .choice_language {
+      display: none;
+      border: 1px solid #3d3d3d;
+      background: #0f0f0f;
+      border-radius: 5px;
+      font-size: 8px;
+      padding: 10px 5px;
+      position: absolute;
+      left: 1370px;
+      top: 65px;
+      cursor: pointer;
+      color: #bea77d;
+    }
+    .choice_language:active {
+      background: #3d3d3d;;
+    }
+    .information_window {
+      display: none;
+      font-family: 'proximanova-light';
+      width: 200px;
+      border: 1px solid #3d3d3d;
+      background: #0f0f0f;
+      font-size: 11px;
+      padding: 15px 20px;
+      position: absolute;
+      left: 1155px;
+      top: 70px;
+      color: white;
+      text-transform: none;
+      text-align: justify;
+
+    }
+    .information_window:after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 10px solid #3d3d3d;
+      position: absolute;
+      left: 175px;
+      top: -10px;
+    }
+    .choice_menu {
+      display: none;
+      text-align: center;
+      border: 1px solid #3d3d3d;
+      background: #0f0f0f;
+      border-radius: 5px;
+      padding: 0 15px 15px 15px;
+      position: absolute;
+      left: 15px;
+      top: 70px;
+      color: #bea77d;
+      li {
+        margin: 2px 0;
+        display: block;
+        border-bottom: 1px solid #3d3d3d;
+        cursor: pointer;
+      }
+    }
+    .choice_menu:after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #3d3d3d;
+      position: absolute;
+      left: 15px;
+      top: -10px;
+      z-index: 1;
+    }
+    .show{
+      display: block;
     }
   }
   .mainscreen {
@@ -127,6 +204,7 @@
           opacity: 0.2;
           border-radius: 50%;
           margin: 0 0 40px  -22px;
+          cursor: pointer;
         }
         .dot_2 {
           display: block;
@@ -136,6 +214,7 @@
           opacity: 0.2;
           border-radius: 50%;
           margin: 0 0 40px  -22px;
+          cursor: pointer;
         }
         .dot_3 {
           display: block;
@@ -145,6 +224,7 @@
           opacity: 0.2;
           border-radius: 50%;
           margin: 0 0 40px  -22px;
+          cursor: pointer;
         }
         .dot_4 {
           display: block;
@@ -154,6 +234,7 @@
           opacity: 0.2;
           border-radius: 50%;
           margin: 0 0 40px  -22px;
+          cursor: pointer;
         }
 
         .dot_point {
@@ -165,6 +246,7 @@
           position: absolute;
           left: -22px;
           top: 208px;
+          cursor: pointer;
         }
       }
     }
