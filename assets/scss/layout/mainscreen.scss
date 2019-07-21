@@ -160,7 +160,7 @@
       top: -10px;
       z-index: 1;
     }
-    .show{
+    .show {
       display: block;
     }
   }
@@ -332,4 +332,192 @@
 
 }
 
+@media screen and (max-width: 1024px) {
+  .mainscreen_wooden {
+    background-image: url("../image/mainscreen_device.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    .navigation {
+      .navigation_line {
+        display: none;
+      }
+      ul {
+        .wooder {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 35px;
+          letter-spacing: 12px;
+          margin: 0 0 0 170px;
+          position: relative;
+        }
+        .about {
+          display: none;
+        }
+        .products {
+          display: none;
+        }
+        .home {
+          display: none;
+        }
+        .information {
+          display: none;
+        }
+        .language {
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0 0 0 180px;
+          cursor: pointer;
+        }
+      }
+    }
+    .mainscreen {
 
+      .number {
+        display: none;
+      }
+      .furnituredecor {
+        display: block;
+        width: 19%;
+        transform: rotate(0deg);
+        margin: 160px 0 0 480px;
+        padding: 0 0 70px 0;
+        span {
+
+          font-size: 15px;
+          letter-spacing: 2px;
+          margin: 30px 19px 0 0;
+        }
+      }
+      .furnituredecor:after {
+        display: none;
+      }
+      .logowooder {
+        display: inline-block;
+        width: 59%;
+        margin: 248px auto 0;
+        vertical-align: top;
+        h1 {
+          letter-spacing: 20px;
+          padding: 0 auto;
+        }
+        .more {
+          outline: none;
+          background: none;
+          border-color: #ffffff;
+          color: #ffffff;
+          box-shadow: none;
+          font: 15px 'proximanova-bold';
+          padding: 19px 70px 19px 70px;
+          margin: 50px 0 0 -175px;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          cursor: pointer;
+          img {
+            display: none;
+          }
+        }
+        .mouse {
+          margin: 40px 0 0 -420px;
+        }
+        .scroll_arrow {
+          margin: 22px 0 0 -420px;
+        }
+        .scroll p {
+          display: none;
+        }
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .mainscreen_wooden {
+    background-image: url("../image/mainscreen_mobile.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    .navigation {
+      .navigation_line {
+        display: none;
+      }
+      ul {
+        .menu .text_menu {
+          display: none;
+          vertical-align: middle;
+          cursor: pointer;
+          .line {
+            display: none;
+            vertical-align: -20%;
+            padding: 0 15px 0 25px;
+            span {
+              display: block;
+              border-bottom: 1px solid;
+              color: #bea67c;
+              padding: 3px 0;
+              width: 30px;
+            }
+
+          }
+
+        }
+        .wooder {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 35px;
+          letter-spacing: 12px;
+          margin: 0 0 0 20px;
+          position: relative;
+        }
+        .language {
+          display: none;
+          vertical-align: middle;
+          margin: 0 0 0 0px;
+          cursor: pointer;
+        }
+      }
+    }
+    .mainscreen {
+      .number {
+        display: none;
+      }
+      .furnituredecor {
+        display: none;
+      }
+      .logowooder {
+        display: inline-block;
+        width: 59%;
+        margin: 158px auto 0;
+        vertical-align: top;
+        h1 {
+          display: none;
+          letter-spacing: 20px;
+          padding: 0 auto;
+        }
+        .more {
+          outline: none;
+          background: none;
+          border-color: #ffffff;
+          color: #ffffff;
+          box-shadow: none;
+          font: 15px 'proximanova-bold';
+          margin: 10px auto 0;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          cursor: pointer;
+          img {
+            display: none;
+          }
+        }
+        .mouse {
+          margin: 40px 0 0 0;
+        }
+        .scroll_arrow {
+          margin: 22px 0 0 0;
+        }
+        .scroll p {
+          display: none;
+        }
+      }
+    }
+  }
+}
