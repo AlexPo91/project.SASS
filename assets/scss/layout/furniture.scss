@@ -1,39 +1,55 @@
 .furniture_main {
   display: flex;
-  padding: 0 101px;
+  align-items: center;
   position: relative;
-
-
-  .furniture_item {
+  span.furniture_f{
+    position: absolute;
+    color: #faf9f6;
+    font: 395px proximanova-bold;
+  }
+  span.furniture_futur{
+    position: absolute;
+    color: #faf9f6;
+    font: 169px proximanova-bold;
+    opacity: 0.5;
+  }
+  h2.subtitle {
+    font: 48px proximanova-bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 100%;
+    transform: translate(0, -100%);
+  }
+  span.line{
+    height: 51px;
+    width: 4px;
+    background-color: #a9946e;
+  }
+  .furniture_item_text {
     text-align: left;
-    align-self: center;
-
-
+    padding-left: 200px;
+    position: relative;
+    h2.title {
+      font: 48px proximanova-bold;
+      text-transform: uppercase;
+    }
     h2.title:before {
       content: "";
       height: 1px;
       width: 151px;
       background-color: #000000;
-
-      display: flex;
-      justify-content: flex-start;
+      display: inline-block;
       position: absolute;
-      top: 50%;
-      right: 100%;
-      margin-right: 30px;
-    }
-    h2 {
-      font: 48px proximanova-bold;
-      text-transform: uppercase;
-      position: relative;
+      top: 0.5em;
+      left: 0px;
+
     }
     p {
       font: 15px proximanova-regular;
       color: #464646;
-      text-align: left;
       position: relative;
       word-wrap: break-word;
-
+      line-height: 1.5em;
     }
     p:before {
       content: "";
@@ -42,27 +58,22 @@
       background-color: #bea67c;
       display: flex;
       position: absolute;
-      top: 0.5em;
-      right: 100%;
+      top: 0.75em;
+      right: 106%;
       margin-right: 30px;
-    }
-    h2.subtitle {
-      position: absolute;
-      top: 100%;
-      transform: translate(0, -100%);
     }
     .link_1 {
       font: 14px proximanova-bold;
       color: #000000;
       text-transform: uppercase;
       a {
-        background:transparent;
-        outline:none;
-        color:#000000;
+        background: transparent;
+        outline: none;
+        color: #000000;
         text-decoration: none;
       }
-
-      a:after{
+    }
+      a:after {
         content: "";
         height: 2px;
         width: 44px;
@@ -71,6 +82,96 @@
 
       }
     }
+
+  }
+
+
+.decor_main {
+  display: flex;
+  align-items: center;
+  position: relative;
+  span.line{
+    height: 51px;
+    width: 4px;
+    background-color: #a9946e;
+  }
+  span.decor_d{
+    position: absolute;
+    color: #faf9f6;
+    font: 395px proximanova-bold;
+  }
+  span.decor_decor {
+    position: absolute;
+    color: #faf9f6;
+    font: 169px proximanova-bold;
+    opacity: 0.5;
+  }
+  h2.subtitle {
+    font: 48px proximanova-bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(0, -100%);
+  }
+  .decor_item_text {
+    text-align: right;
+    padding-right: 200px;
+    position: relative;
+    h2.title {
+      font: 48px proximanova-bold;
+      text-transform: uppercase;
+    }
+    h2.title:after {
+      content: "";
+      height: 1px;
+      width: 151px;
+      background-color: #000000;
+      display: inline-block;
+      position: absolute;
+      top: 0.5em;
+      padding-right: 0%;
+
+    }
+    p {
+      font: 15px proximanova-regular;
+      color: #464646;
+      position: relative;
+      word-wrap: break-word;
+      line-height: 1.5em;
+    }
+    p:after {
+      content: "";
+      height: 3px;
+      width: 44px;
+      background-color: #bea67c;
+      display: flex;
+      position: absolute;
+      top: 0.75em;
+      left: 100%;
+    }
+    .link_1 {
+      font: 14px proximanova-bold;
+      color: #000000;
+      text-transform: uppercase;
+      display: inline-block;
+      a {
+        background: transparent;
+        outline: none;
+        color: #000000;
+        text-decoration: none;
+
+      }
+      a:after {
+        content: "";
+        height: 2px;
+        width: 44px;
+        background-color: #bea67c;
+        display: flex;
+
+    }
+    }
+
   }
 
 }
